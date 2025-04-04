@@ -1,0 +1,7 @@
+.env
+show_notes.txt
+merged_audio.mp3
+last_run.txt
+daily_show_notes.txt
+conversation.json
+daily_conversation.json
