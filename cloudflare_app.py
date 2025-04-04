@@ -66,10 +66,16 @@ def build_prompt(text, items):
     """
 
     return (
-        f"🎙️ Welcome to Daily Papers! Today, we're diving into the latest AI research in an engaging and informative discussion."
-        f" Here are today's research papers:\n{paper_summaries}\n\n"
-        f"Convert this into a conversational podcast-style discussion between two experts, Brian and Jenny."
-        f" Return the conversation in JSON format:\n{template}"
+        f"🎙️ Welcome to Daily Papers! Today, we're diving into the latest AI research in an engaging and "
+        f"informative discussion. The goal is to make it a **medium-length podcast** that’s **engaging, natural, and insightful** while covering "
+        f"the key points of each paper.\n\n"
+        f"Here are today's research papers:\n{paper_summaries}\n\n"
+        f"Convert this into a **conversational podcast-style discussion** between two experts, Brian and Jenny. "
+        f"Ensure the conversation flows naturally, using a mix of **insightful analysis, casual phrasing, and occasional filler words** like 'uhm' and 'you know' "
+        f"to keep it realistic. The tone should be engaging yet professional, making it interesting for the audience.\n\n"
+        f"Each research paper should be **discussed meaningfully**, but avoid dragging the conversation too long. "
+        f"Focus on key insights and practical takeaways. Keep the pacing dynamic and interactive.\n\n"
+        f"Please return the conversation in **this exact JSON format**:\n{template}"
     )
 
 def extract_conversation(text, items):
